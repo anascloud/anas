@@ -1,0 +1,61 @@
+{
+    "common": {
+        "appName": "QuantiTop",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm password",
+        "name": "Full name",
+        "loading": "Please wait…",
+        "or": "or",
+        "language": "עברית"
+    },
+    "login": {
+        "title": "Sign in",
+        "subtitle": "Welcome back — enter your details below.",
+        "remember": "Remember me",
+        "forgot": "Forgot your password?",
+        "submit": "Sign in",
+        "submitting": "Signing in…",
+        "noAccount": "Don't have an account?",
+        "register": "Create one"
+    },
+    "register": {
+        "title": "Create an account",
+        "subtitle": "It only takes a minute.",
+        "submit": "Create account",
+        "submitting": "Creating account…",
+        "hasAccount": "Already have an account?",
+        "login": "Sign in"
+    },
+    "twoFactor": {
+        "title": "Check your email",
+        "subtitle": "We sent a {length}-digit code to {email}.",
+        "code": "Verification code",
+        "submit": "Verify",
+        "submitting": "Verifying…",
+        "resend": "Resend code",
+        "resendIn": "Resend available in {seconds}s",
+        "backToLogin": "Back to sign in"
+    },
+    "forgotPassword": {
+        "title": "Forgot your password?",
+        "subtitle": "Enter your email and we'll send you a reset link.",
+        "submit": "Email reset link",
+        "submitting": "Sending…",
+        "backToLogin": "Back to sign in"
+    },
+    "resetPassword": {
+        "title": "Reset your password",
+        "subtitle": "Choose a new password for your account.",
+        "submit": "Reset password",
+        "submitting": "Resetting…"
+    },
+    "dashboard": {
+        "greeting": "Hello World",
+        "welcome": "Signed in as {name} ({email}).",
+        "logout": "Log out"
+    },
+    "validation": {
+        "passwordHint": "At least 8 characters, with upper & lowercase letters and a number."
+    }
+}

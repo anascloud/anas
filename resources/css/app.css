@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Assistant:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: 'Inter', 'Assistant', sans-serif;
+}
+
+html[dir='rtl'] body {
+    font-family: 'Assistant', 'Inter', sans-serif;
+}
+
+.form-input-icon {
+    @apply w-5 h-5 text-gray-400;
+}

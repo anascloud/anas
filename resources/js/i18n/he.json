@@ -1,0 +1,61 @@
+{
+    "common": {
+        "appName": "QuantiTop",
+        "email": "אימייל",
+        "password": "סיסמה",
+        "confirmPassword": "אימות סיסמה",
+        "name": "שם מלא",
+        "loading": "נא להמתין…",
+        "or": "או",
+        "language": "English"
+    },
+    "login": {
+        "title": "התחברות",
+        "subtitle": "ברוכים השבים — נא להזין את הפרטים שלך.",
+        "remember": "זכור אותי",
+        "forgot": "שכחת סיסמה?",
+        "submit": "התחבר",
+        "submitting": "מתחבר…",
+        "noAccount": "אין לך חשבון?",
+        "register": "צור חשבון"
+    },
+    "register": {
+        "title": "יצירת חשבון",
+        "subtitle": "זה לוקח רק דקה.",
+        "submit": "צור חשבון",
+        "submitting": "יוצר חשבון…",
+        "hasAccount": "כבר יש לך חשבון?",
+        "login": "התחבר"
+    },
+    "twoFactor": {
+        "title": "בדוק את תיבת האימייל שלך",
+        "subtitle": "שלחנו קוד בן {length} ספרות לכתובת {email}.",
+        "code": "קוד אימות",
+        "submit": "אמת",
+        "submitting": "מאמת…",
+        "resend": "שלח קוד מחדש",
+        "resendIn": "ניתן לשלוח שוב בעוד {seconds} שניות",
+        "backToLogin": "חזרה להתחברות"
+    },
+    "forgotPassword": {
+        "title": "שכחת סיסמה?",
+        "subtitle": "הזן את כתובת האימייל שלך ונשלח קישור לאיפוס.",
+        "submit": "שלח קישור לאיפוס",
+        "submitting": "שולח…",
+        "backToLogin": "חזרה להתחברות"
+    },
+    "resetPassword": {
+        "title": "איפוס סיסמה",
+        "subtitle": "בחר סיסמה חדשה לחשבונך.",
+        "submit": "אפס סיסמה",
+        "submitting": "מאפס…"
+    },
+    "dashboard": {
+        "greeting": "Hello World",
+        "welcome": "מחובר בתור {name} ({email}).",
+        "logout": "התנתק"
+    },
+    "validation": {
+        "passwordHint": "לפחות 8 תווים, עם אותיות גדולות, קטנות וספרה."
+    }
+}

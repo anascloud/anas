@@ -28,7 +28,7 @@
         "login": "Sign in"
     },
     "twoFactor": {
-        "title": "Check your email",
+        "title": "A verification code was sent to your email",
         "subtitle": "We sent a {length}-digit code to {email}.",
         "code": "Verification code",
         "submit": "Verify",

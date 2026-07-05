@@ -95,18 +95,16 @@ function resend() {
 </script>
 
 <template>
-    <GuestLayout>
+    <GuestLayout
+    :title="t('twoFactor.title')"
+>
         <div class="mx-auto w-full max-w-md">
                 <h1 class="text-2xl font-bold text-slate-900">
-                    קוד אימות נשלח אל הטלפון שלך
+                    {{ t('twoFactor.subtitle') }}
                 </h1>
 
                 <p class="mt-3 text-lg font-semibold tracking-wide text-slate-900" dir="ltr">
-                    {{ props.phone }}
-                </p>
-
-                <p class="mt-4 text-sm text-slate-500">
-                    שלחנו את הקוד למספר הטלפון המסתיים ב-
+                    {{ props.email }}
                 </p>
 
                 <div class="mt-2 flex items-center justify-center gap-3" dir="ltr">
@@ -170,7 +168,7 @@ function resend() {
                                 :loading="form.processing"
                                 :disabled="form.code.length !== 6"
                                 class="justify-center rounded-md"
-                                label="אימות קוד"
+                                :label="t('twoFactor.submit')"
                                 loading-label="מאמת..."
                             />
                         </div>

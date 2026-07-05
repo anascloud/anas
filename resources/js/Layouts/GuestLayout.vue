@@ -38,14 +38,6 @@ defineProps({
                 style="background-image: url('/images/auth-bg.jpg'); background-blend-mode: luminosity;"
             ></div>
             <div class="absolute inset-0 bg-slate-900/55"></div>
-            <div class="absolute inset-0 flex items-end p-12">
-                <div class="text-white/80">
-                    <p class="text-sm uppercase tracking-widest text-white/50 mb-2">QuantiTop</p>
-                    <p class="text-2xl font-semibold leading-snug max-w-xs">
-                        Smart, secure access to your workspace.
-                    </p>
-                </div>
-            </div>
         </div>
     </div>
 </template>

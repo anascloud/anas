@@ -35,7 +35,7 @@ defineProps({
             <!-- Background image -->
             <div
                 class="absolute inset-0 bg-left bg-cover bg-no-repeat
-                    bg-[image:url('/images/auth-bg.jpg')]" style="background-position: 0% 0%;">
+                    bg-[image:url('/images/auth-bg.jpg')]" style="background-size: contain;background-repeat: round;">
             </div>
         </div>
     </div>

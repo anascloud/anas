@@ -4,6 +4,8 @@ import { useI18n } from 'vue-i18n';
 import GuestLayout from '@/Layouts/GuestLayout.vue';
 import TextInput from '@/Components/TextInput.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
+import { EnvelopeIcon } from '@heroicons/vue/24/outline'
+import { LockClosedIcon } from '@heroicons/vue/24/outline'
 
 const { t } = useI18n();
 
@@ -27,10 +29,10 @@ function submit() {
 </script>
 
 <template>
-    <GuestLayout :title="t('login.title')" :subtitle="t('login.subtitle')">
+    <GuestLayout :title="t('login.title')">
         <div
             v-if="status"
-            class="mb-4 rounded-lg bg-green-50 border border-green-200 text-green-700 text-sm px-4 py-3"
+            class="mb-4 rounded-lg bg-green-50 border border-gray-200 text-green-700 text-sm px-4 py-3"
             role="status"
         >
             {{ status }}
@@ -45,7 +47,12 @@ function submit() {
                 autocomplete="username"
                 required
                 :error="form.errors.email"
-            />
+                placeholder="Enter your email"
+            >
+                <template #icon>
+                    <img src="/images/envelope.svg" class="w-5 h-5" />
+                </template>
+            </TextInput>
 
             <TextInput
                 id="password"
@@ -55,18 +62,23 @@ function submit() {
                 autocomplete="current-password"
                 required
                 :error="form.errors.password"
-            />
+                placeholder="Enter your password"
+            >
+            <template #icon>
+                <img src="/images/lock.svg" class="w-5 h-5" />
+            </template>
+        </TextInput>
 
             <div class="flex items-center justify-between text-sm">
                 <label class="flex items-center gap-2 text-gray-600">
                     <input
                         type="checkbox"
                         v-model="form.remember"
-                        class="rounded border-gray-300 text-brand-600 focus:ring-brand-500"
+                        class="rounded border-gray-300 text-[#5B93EF] focus:ring-brand-500"
                     />
                     {{ t('login.remember') }}
                 </label>
-                <a :href="route('password.request')" class="text-brand-600 hover:text-brand-700 font-medium">
+                <a :href="route('password.request')" class="text-[#5B93EF] hover:text-[#5B93EF] font-medium">
                     {{ t('login.forgot') }}
                 </a>
             </div>
@@ -79,7 +91,7 @@ function submit() {
 
             <p class="text-center text-sm text-gray-500">
                 {{ t('login.noAccount') }}
-                <a :href="route('register')" class="text-brand-600 hover:text-brand-700 font-medium">
+                <a :href="route('register')" class="text-[#5B93EF] hover:text-[#5B93EF] font-medium">
                     {{ t('login.register') }}
                 </a>
             </p>

@@ -76,7 +76,7 @@ function submit() {
 
             <p class="text-center text-sm text-gray-500">
                 {{ t('register.hasAccount') }}
-                <a :href="route('login')" class="text-brand-600 hover:text-brand-700 font-medium">
+                <a :href="route('login')" class="text-[#5B93EF] hover:text-[#5B93EF] font-medium">
                     {{ t('register.login') }}
                 </a>
             </p>

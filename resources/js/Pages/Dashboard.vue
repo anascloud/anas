@@ -30,7 +30,7 @@ function logout() {
         </header>
 
         <main class="flex flex-col items-center justify-center px-6 py-24 text-center">
-            <h1 class="text-5xl font-bold text-brand-700 mb-4">{{ t('dashboard.greeting') }}</h1>
+            <h1 class="text-5xl font-bold text-[#5B93EF] mb-4">{{ t('dashboard.greeting') }}</h1>
             <p class="text-gray-500">{{ t('dashboard.welcome', { name: props.user.name, email: props.user.email }) }}</p>
         </main>
     </div>

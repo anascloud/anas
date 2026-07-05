@@ -10,7 +10,8 @@ defineProps({
     <button
         type="submit"
         :disabled="loading"
-        class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-brand-600 hover:bg-brand-700 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold py-2.5 px-4 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500"
+        style="border-radius: 30px;"
+        class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-[#5B93EF] hover:bg-[#5B93EF] disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold py-3.5 px-4 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5B93EF]"
     >
         <svg
             v-if="loading"

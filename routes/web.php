@@ -7,21 +7,15 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\TwoFactorChallengeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LocaleController;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
+use Brevo\Brevo;
+use Brevo\TransactionalEmails\Requests\SendTransacEmailRequest;
+use Brevo\TransactionalEmails\Types\SendTransacEmailRequestSender;
+use Brevo\TransactionalEmails\Types\SendTransacEmailRequestToItem;
 
 Route::redirect('/', '/login');
 
 Route::post('/locale', [LocaleController::class, 'update'])->name('locale.update');
-Route::get('/test-mail', function () {
-    Mail::raw('Test email from QuantiTop', function ($message) {
-        $message->to('[email protected]')
-                ->subject('Test Email');
-    });
-
-    return 'Mail sent';
-});
 
 // --- Guest-only routes ---
 Route::middleware('guest')->group(function () {

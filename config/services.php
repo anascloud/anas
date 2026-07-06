@@ -10,4 +10,9 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+
+    'brevo' => [
+        'key' => env('MAIL_PASSWORD'),
+        'dsn' => 'brevo+api://' . env('MAIL_PASSWORD') . '@default',
+    ],
 ];

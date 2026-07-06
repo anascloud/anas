@@ -1,0 +1,68 @@
+databases:
+  - name: quantitop-db
+    plan: free
+    databaseName: quantitop
+    user: quantitop
+
+services:
+  - type: web
+    name: quantitop-auth
+    runtime: docker
+    plan: free
+    envVars:
+      - key: APP_NAME
+        value: QuantiTop
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: APP_KEY
+        sync: false # paste the output of `php artisan key:generate --show` here
+      - key: APP_URL
+        sync: false # fill in after first deploy, e.g. https://quantitop-auth.onrender.com
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_HOST
+        fromDatabase:
+          name: quantitop-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: quantitop-db
+          property: port
+      - key: DB_DATABASE
+        fromDatabase:
+          name: quantitop-db
+          property: database
+      - key: DB_USERNAME
+        fromDatabase:
+          name: quantitop-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: quantitop-db
+          property: password
+      - key: SESSION_DRIVER
+        value: database
+      - key: SESSION_SECURE_COOKIE
+        value: true
+      - key: CACHE_STORE
+        value: database
+      - key: QUEUE_CONNECTION
+        value: sync
+      - key: MAIL_MAILER
+        value: smtp
+      - key: MAIL_HOST
+        sync: false
+      - key: MAIL_PORT
+        sync: false
+      - key: MAIL_USERNAME
+        sync: false
+      - key: MAIL_PASSWORD
+        sync: false
+      - key: MAIL_ENCRYPTION
+        value: tls
+      - key: MAIL_FROM_ADDRESS
+        value: no-reply@quantitop.test
+      - key: MAIL_FROM_NAME
+        value: QuantiTop

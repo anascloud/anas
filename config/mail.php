@@ -24,8 +24,10 @@ return [
         'array' => [
             'transport' => 'array',
         ],
+
         'brevo' => [
-            'transport' => 'brevo', // must match the name in Mail::extend()
+            'transport' => 'brevo',
+            'key' => env('BREVO_API_KEY'),
         ],
     ],
 

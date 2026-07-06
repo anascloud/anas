@@ -7,13 +7,19 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\TwoFactorChallengeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LocaleController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
-use Brevo\Brevo;
-use Brevo\TransactionalEmails\Requests\SendTransacEmailRequest;
-use Brevo\TransactionalEmails\Types\SendTransacEmailRequestSender;
-use Brevo\TransactionalEmails\Types\SendTransacEmailRequestToItem;
 
 Route::redirect('/', '/login');
+
+Route::get('clear', function () {
+    Artisan::call('config:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    Artisan::call('optimize:clear');
+    return 'Cleared!';
+});
 
 Route::post('/locale', [LocaleController::class, 'update'])->name('locale.update');
 

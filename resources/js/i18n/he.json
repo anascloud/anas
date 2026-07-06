@@ -13,7 +13,8 @@
         "passwordPlaceholder": "הזן סיסמה",
         "currentPasswordPlaceholder": "הזן סיסמה נוכחית",
         "newPasswordPlaceholder": "הזן סיסמה חדשה",
-        "confirmNewPasswordPlaceholder": "אימות סיסמה חדשה"
+        "confirmNewPasswordPlaceholder": "אימות סיסמה חדשה",
+        "confirmPasswordPlaceholder": "אימות סיסמה"
     },
     "login": {
         "title": "התחברות",
@@ -49,13 +50,20 @@
         "subtitle": "הזן את כתובת האימייל שלך ונשלח קישור לאיפוס.",
         "submit": "שלח קישור לאיפוס",
         "submitting": "שולח…",
-        "backToLogin": "חזרה להתחברות"
+        "backToLogin": "חזרה להתחברות",
+        "login": "התחבר",
+        "rememberPassword": "זכור סיסמה?"
     },
     "resetPassword": {
         "title": "איפוס סיסמה",
         "subtitle": "בחר סיסמה חדשה לחשבונך.",
         "submit": "אפס סיסמה",
         "submitting": "מאפס…"
+    },
+    "resetPasswordSuccess": {
+        "title": "הסיסמה אופסה",
+        "subtitle": "הסיסמה שלך אופסה בהצלחה.",
+        "loginButton": "מעבר להתחברות"
     },
     "dashboard": {
         "greeting": "Hello World",

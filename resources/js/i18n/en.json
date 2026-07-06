@@ -13,13 +13,14 @@
         "passwordPlaceholder": "Enter your password",
         "currentPasswordPlaceholder": "Enter your current password",
         "newPasswordPlaceholder": "Enter your new password",
-        "confirmNewPasswordPlaceholder": "Confirm your new password"
+        "confirmNewPasswordPlaceholder": "Confirm your new password",
+        "confirmPasswordPlaceholder": "Confirm your password"
     },
     "login": {
         "title": "Log in to the system",
         "subtitle": "Welcome back — enter your details below.",
         "remember": "Remember me",
-        "forgot": "Forgot your password?",
+        "forgot": "Forgot password?",
         "submit": "Sign in",
         "submitting": "Signing in…",
         "noAccount": "Don't have an account?",
@@ -45,17 +46,24 @@
         "backToLogin": "Back to sign in"
     },
     "forgotPassword": {
-        "title": "Forgot your password?",
-        "subtitle": "Enter your email and we'll send you a reset link.",
-        "submit": "Email reset link",
+        "title": "Forgot password?",
+        "subtitle": "Enter the email address you used to register, and a password reset code will be sent to your email address.",
+        "submit": "Send code",
         "submitting": "Sending…",
-        "backToLogin": "Back to sign in"
+        "backToLogin": "Back to sign in",
+        "login": "Log in",
+        "rememberPassword": "Remember password?"
     },
     "resetPassword": {
         "title": "Change password",
         "subtitle": "Choose a new password for your account.",
         "submit": "Reset password",
         "submitting": "Resetting…"
+    },
+    "resetPasswordSuccess": {
+        "title": "Your password has been changed successfully!",
+        "subtitle": "You can now log in using your new password.",
+        "loginButton": "Go to the Login Page"
     },
     "dashboard": {
         "greeting": "Hello World",

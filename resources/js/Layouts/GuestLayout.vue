@@ -5,7 +5,7 @@ import LanguageSwitcher from '@/Components/LanguageSwitcher.vue';
 const { t } = useI18n();
 
 defineProps({
-    title: { type: String, required: true },
+    title: { type: String, required: false },
     subtitle: { type: String, default: '' },
 });
 </script>

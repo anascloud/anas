@@ -57,6 +57,11 @@ class NewPasswordController extends Controller
             ]);
         }
 
-        return redirect()->route('login')->with('status', __('auth.password_reset.success'));
+        return redirect()->route('password.reset.success');
+    }
+
+    public function success(): Response
+    {
+        return Inertia::render('Auth/ResetPasswordSuccess');
     }
 }

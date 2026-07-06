@@ -38,7 +38,12 @@ function submit() {
                 autocomplete="username"
                 required
                 :error="form.errors.email"
-            />
+                :placeholder="t('common.emailPlaceholder')"
+            >
+                <template #icon>
+                    <img src="/images/envelope.svg" class="w-5 h-5" />
+                </template>
+            </TextInput>
 
             <div>
                 <TextInput
@@ -49,7 +54,12 @@ function submit() {
                     autocomplete="new-password"
                     required
                     :error="form.errors.password"
-                />
+                    :placeholder="t('common.passwordPlaceholder')"
+                >
+                    <template #icon>
+                        <img src="/images/lock.svg" class="w-5 h-5" />
+                    </template>
+                </TextInput>
                 <p class="mt-1.5 text-xs text-gray-400">{{ t('validation.passwordHint') }}</p>
             </div>
 
@@ -61,7 +71,12 @@ function submit() {
                 autocomplete="new-password"
                 required
                 :error="form.errors.password_confirmation"
-            />
+                :placeholder="t('common.confirmPasswordPlaceholder')"
+            >
+                <template #icon>
+                    <img src="/images/lock.svg" class="w-5 h-5" />
+                </template>
+            </TextInput>
 
             <PrimaryButton
                 :loading="form.processing"

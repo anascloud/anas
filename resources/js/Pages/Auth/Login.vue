@@ -47,7 +47,7 @@ function submit() {
                 autocomplete="username"
                 required
                 :error="form.errors.email"
-                placeholder="Enter your email"
+                :placeholder="t('common.emailPlaceholder')"
             >
                 <template #icon>
                     <img src="/images/envelope.svg" class="w-5 h-5" />
@@ -62,12 +62,12 @@ function submit() {
                 autocomplete="current-password"
                 required
                 :error="form.errors.password"
-                placeholder="Enter your password"
+                :placeholder="t('common.passwordPlaceholder')"
             >
-            <template #icon>
-                <img src="/images/lock.svg" class="w-5 h-5" />
-            </template>
-        </TextInput>
+                <template #icon>
+                    <img src="/images/lock.svg" class="w-5 h-5" />
+                </template>
+            </TextInput>
 
             <div class="flex items-center justify-between text-sm">
                 <label class="flex items-center gap-2 text-gray-600">
@@ -89,6 +89,13 @@ function submit() {
                 :loading-label="t('login.submitting')"
             />
 
+            <p class="text-center text-sm text-gray-500">
+                
+                <a :href="route('register')" class="text-[#5B93EF] hover:text-[#5B93EF] font-medium">
+                    {{ t('login.loginWithCode') }}
+                </a>
+            </p>
+            
             <p class="text-center text-sm text-gray-500">
                 {{ t('login.noAccount') }}
                 <a :href="route('register')" class="text-[#5B93EF] hover:text-[#5B93EF] font-medium">

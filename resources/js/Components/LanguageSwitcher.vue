@@ -63,7 +63,6 @@ onBeforeUnmount(() => {
 
 <template>
     <div
-        dir="ltr"
         class="language-dropdown relative inline-block"
     >
         <button

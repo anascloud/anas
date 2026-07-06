@@ -7,7 +7,13 @@
         "name": "Full name",
         "loading": "Please wait…",
         "or": "or",
-        "language": "עברית"
+        "language": "עברית",
+        "namePlaceholder": "Enter your full name",
+        "emailPlaceholder": "Enter your email",
+        "passwordPlaceholder": "Enter your password",
+        "currentPasswordPlaceholder": "Enter your current password",
+        "newPasswordPlaceholder": "Enter your new password",
+        "confirmNewPasswordPlaceholder": "Confirm your new password"
     },
     "login": {
         "title": "Log in to the system",
@@ -17,7 +23,8 @@
         "submit": "Sign in",
         "submitting": "Signing in…",
         "noAccount": "Don't have an account?",
-        "register": "Create one"
+        "register": "Create one",
+        "loginWithCode": "Log in with a One-Time Code"
     },
     "register": {
         "title": "Create an account",
@@ -29,7 +36,7 @@
     },
     "twoFactor": {
         "title": "A verification code was sent to your email",
-        "subtitle": "We sent a {length}-digit code to {email}.",
+        "subtitle": "We sent a 6-digit code to {email}.",
         "code": "Verification code",
         "submit": "Verify",
         "submitting": "Verifying…",
@@ -45,7 +52,7 @@
         "backToLogin": "Back to sign in"
     },
     "resetPassword": {
-        "title": "Reset your password",
+        "title": "Change password",
         "subtitle": "Choose a new password for your account.",
         "submit": "Reset password",
         "submitting": "Resetting…"

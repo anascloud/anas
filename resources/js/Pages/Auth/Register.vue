@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n';
 import GuestLayout from '@/Layouts/GuestLayout.vue';
 import TextInput from '@/Components/TextInput.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
+import { UserIcon } from '@heroicons/vue/24/outline'
 
 const { t } = useI18n();
 
@@ -24,7 +25,7 @@ function submit() {
 </script>
 
 <template>
-    <GuestLayout :title="t('register.title')" :subtitle="t('register.subtitle')">
+    <GuestLayout :title="t('register.title')">
         <form @submit.prevent="submit" class="space-y-5" novalidate>
             <TextInput
                 id="name"
@@ -33,6 +34,8 @@ function submit() {
                 autocomplete="name"
                 required
                 :error="form.errors.name"
+                :icon="UserIcon"
+                :placeholder="t('common.namePlaceholder')"
             />
 
             <TextInput
@@ -43,7 +46,12 @@ function submit() {
                 autocomplete="username"
                 required
                 :error="form.errors.email"
-            />
+                :placeholder="t('common.emailPlaceholder')"
+            >
+                <template #icon>
+                    <img src="/images/envelope.svg" class="w-5 h-5" />
+                </template>
+            </TextInput>
 
             <div>
                 <TextInput
@@ -54,7 +62,12 @@ function submit() {
                     autocomplete="new-password"
                     required
                     :error="form.errors.password"
-                />
+                    :placeholder="t('common.passwordPlaceholder')"
+                >
+                    <template #icon>
+                        <img src="/images/lock.svg" class="w-5 h-5" />
+                    </template>
+                </TextInput>
                 <p class="mt-1.5 text-xs text-gray-400">{{ t('validation.passwordHint') }}</p>
             </div>
 
@@ -66,7 +79,12 @@ function submit() {
                 autocomplete="new-password"
                 required
                 :error="form.errors.password_confirmation"
-            />
+                :placeholder="t('common.confirmPasswordPlaceholder')"
+            >
+                <template #icon>
+                    <img src="/images/lock.svg" class="w-5 h-5" />
+                </template>
+            </TextInput>
 
             <PrimaryButton
                 :loading="form.processing"

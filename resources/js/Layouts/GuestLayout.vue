@@ -11,7 +11,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="min-h-screen flex flex-col md:flex-row-reverse border-b-[23px] border-b-[#5B93EF]" dir="auto">
+    <div class="min-h-screen flex flex-col md:flex-row-reverse border-b-[23px] border-b-[#5B93EF]" dir="ltr">
         <!-- Form panel -->
         <div class="flex-1 flex flex-col bg-white">
             <div class="flex items-center justify-between px-8 py-6">
@@ -33,10 +33,7 @@ defineProps({
         <!-- Visual panel -->
         <div class="hidden md:block md:w-[67%] relative overflow-hidden">
             <!-- Background image -->
-            <div
-                class="absolute inset-0 bg-left bg-cover bg-no-repeat
-                    bg-[image:url('/images/auth-bg.jpg')]" style="background-size: contain;background-repeat: round;">
-            </div>
+            <div class="absolute inset-0 bg-left bg-cover bg-no-repeat bg-[image:url('/images/auth-bg.jpg')]"> </div>
         </div>
     </div>
 </template>

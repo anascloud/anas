@@ -7,7 +7,13 @@
         "name": "שם מלא",
         "loading": "נא להמתין…",
         "or": "או",
-        "language": "English"
+        "language": "English",
+        "namePlaceholder": "הזן שם מלא",
+        "emailPlaceholder": "הזן אימייל",
+        "passwordPlaceholder": "הזן סיסמה",
+        "currentPasswordPlaceholder": "הזן סיסמה נוכחית",
+        "newPasswordPlaceholder": "הזן סיסמה חדשה",
+        "confirmNewPasswordPlaceholder": "אימות סיסמה חדשה"
     },
     "login": {
         "title": "התחברות",
@@ -17,7 +23,8 @@
         "submit": "התחבר",
         "submitting": "מתחבר…",
         "noAccount": "אין לך חשבון?",
-        "register": "צור חשבון"
+        "register": "צור חשבון",
+        "loginWithCode": "התחבר עם קוד חד פעמי"
     },
     "register": {
         "title": "יצירת חשבון",

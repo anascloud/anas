@@ -66,7 +66,7 @@
         "loginButton": "מעבר להתחברות"
     },
     "dashboard": {
-        "greeting": "Hello World",
+        "greeting": "שלום עולם",
         "welcome": "מחובר בתור {name} ({email}).",
         "logout": "התנתק"
     },

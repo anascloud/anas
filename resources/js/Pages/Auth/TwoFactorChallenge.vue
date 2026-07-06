@@ -90,8 +90,8 @@ function resend() {
 
 <template>
     <GuestLayout :title="t('twoFactor.title')">
-        <div class="mx-auto w-full max-w-md">
-            <p class="mt-3 font-semibold tracking-wide text-slate-900" dir="ltr">
+        <div class="mx-auto w-full max-w-md gap-4">
+            <p class="mt-3 text-sm tracking-wide text-slate-900" dir="ltr">
                 {{ t('twoFactor.subtitle') }} {{ props.email }}
             </p>
 
@@ -138,7 +138,7 @@ function resend() {
                     </p>
                 </div>
 
-                <div class="flex items-center justify-between gap-4">
+                <div class="flex items-center justify-between gap-4 py-4">
                     <div class="flex-1">
                         <PrimaryButton
                             :loading="form.processing"
@@ -159,7 +159,7 @@ function resend() {
                                 type="button"
                                 @click="resend"
                                 :disabled="resending || secondsLeft > 0"
-                                class="m-0 p-0 leading-none text-sm font-medium text-blue-600 transition hover:text-blue-700 disabled:cursor-not-allowed disabled:text-slate-400"
+                                class="m-0 p-0 leading-none text-sm font-medium text-blue-600 transition hover:text-blue-700 disabled:cursor-not-allowed disabled:text-slate-400 underline"
                             >
                                 {{ t('twoFactor.resend') }}
                             </button>

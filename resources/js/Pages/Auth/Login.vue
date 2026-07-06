@@ -89,12 +89,11 @@ function submit() {
                 :loading-label="t('login.submitting')"
             />
 
-            <p class="text-center text-sm text-gray-500">
-                
+            <!-- <p class="text-center text-sm text-gray-500">
                 <a :href="route('register')" class="text-[#5B93EF] hover:text-[#5B93EF] font-medium">
                     {{ t('login.loginWithCode') }}
                 </a>
-            </p>
+            </p> -->
             
             <p class="text-center text-sm text-gray-500">
                 {{ t('login.noAccount') }}

@@ -124,7 +124,7 @@ function resend() {
                                 :key="index"
                                 class="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-300 bg-white text-xl font-semibold text-slate-900 shadow-sm transition sm:h-14 sm:w-14"
                                 :class="{
-                                    'border-blue-500 ring-2 ring-blue-100': form.code.length === index - 1,
+                                    'border-blue-500 ring-2 ring-blue-400': form.code.length === index - 1,
                                     'border-red-300 ring-2 ring-red-100': form.errors.code,
                                 }"
                             >
